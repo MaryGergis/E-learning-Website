@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Newsreader&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #264653;
+  height: 80px;
+  gap: 5px;
+  justify-content: space-around;
+  font-size: 20px;
+  position: fixed;
+  z-index: 2;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px #000;
+  border-bottom: 3px solid #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fst_navDiv {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fst_navDiv a {
+  font-size: 30px;
+  margin-right: 10px;
+  color: bisque;
+  text-decoration: none;
+}
+
+.fst_navDiv span {
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+.Snd_navDiv {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  padding-right: 21px;
+  position: relative;
+}
+
+.Snd_navDiv ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+.logout_li {
+  position: absolute;
+  right: 58px;
+}
+
+.secdiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.a_tag_elm {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.a_tag_elm:hover {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #0e3347;
+  cursor: pointer;
+}
+
+
+
+.cart{
+  width: 100px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-direction: row;
+}
+
+.cart span {
+    font-size: 25px;
+    display: flex;
+    color: white;
+
+}
+
+.cart a {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  display: flex;
+}
+
+.cart h2{
+  margin: 0 5px;
+} 
+
+
+
+
+.container{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    gap: 15px;
+    overflow-y: scroll;
+    margin: 0px;
+    position: absolute;
+    top: 85px;
+}
+
+/* -----------styling of left side div (visitinglinks) and its content start----------------------------- */
+.visitinglinks{    
+    width: 26%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-right: 10px solid #0e3347;
+    border-radius: 10px;
+    color: #264653;
+
+}
+
+
+
+
+.htmlQus{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.questions ol {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+
+.cssQus{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/* -----------styling of left side div (visitinglinks) and its content end----------------------------- */
+
+
+
+
+
+
+/* -----------styling of right side div (maincontent) and its content start----------------------------- */
+
+.mainContent{
+    width: 76%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: visible;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+    gap: 40px;
+    overflow-y: scroll;
+}
+
+.mainContent h1 {
+    margin: 0px auto;
+    text-decoration: underline;
+    color: #264653;
+}
+
+/* -----------styling of right side div (maincontent) and its content end----------------------------- */
+
+
+/* ----------------scroll bar styling -------------------- */
+/* width */
+.mainContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.mainContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.mainContent::-webkit-scrollbar-thumb {
+  background: #2f3e46; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.mainContent::-webkit-scrollbar-thumb:hover {
+  background: #2f3e46; 
+}
+
+/* whitespace */
+
+
+/* ----------------scroll bar styling end-------------------- */

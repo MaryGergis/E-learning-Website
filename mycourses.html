@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>my courses</title>
+  </head>
+  <body class="myCoursePage">
+    <nav class="navbar">
+      <div class="fst_navDiv">
+        <a class="" href="home.html">E-learning Website</a>
+      </div>
+
+      <div class="Snd_navDiv">
+        <ul class="">
+          <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
+          <li class="">
+            <a
+              onclick="document.location='home.html#allcourses'"
+              class="a_tag_elm"
+              >Courses</a
+            >
+          </li>
+          <li class="">
+            <a href="myprofile.html" class="a_tag_elm">My Profile</a>
+          </li>
+          <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li>
+        </ul>
+      </div>
+
+      <div class="cart">
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Your Cart =</h2>
+          <span id="cartSpan">0</span></a
+        >
+      </div>
+    </nav>
+
+    <div id="courseContainer"></div>
+
+    <script src="./CartJavascript/script.js"></script>
+    <script src="./CartJavascript/cart.js"></script>
+    <script src="./courses.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

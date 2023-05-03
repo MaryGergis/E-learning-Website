@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-learning Website</title>
+  </head>
+  <body>
+    <!-- START NAVIGATION-->
+
+    <nav class="navbar">
+      <div class="fst_navDiv">
+        <a>E-learning Website</a>
+      </div>
+
+      <div class="Snd_navDiv">
+        <ul class="">
+          <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
+          <li class="">
+            <a
+              onclick="document.location='home.html#allcourses'"
+              class="a_tag_elm"
+              >Courses</a
+            >
+          </li>
+          <li class="">
+            <a href="myprofile.html" class="a_tag_elm">My Profile</a>
+          </li>
+          <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li>
+        </ul>
+      </div>
+
+      <div class="Snd_navDiv indexSecondNav">
+        <ul class="">
+          <li id="Login" class="a_tag_elm">Log-In</li>
+          <li><a href="#" id="formDisplay" class="a_tag_elm">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- END NAVIGATION-->
+
+    <div class="video_nd_txt_div">
+      <div class="video_div">
+        <video autoplay muted loop class="Bg_video"  >
+          <source src="./video.mp4" />
+        </video>
+      </div>
+      <div class="blue_color_div"></div>
+      <div class="txt_div">
+        <h1>Welcome to Our E-learning Website</h1>
+        <small>Learn and Implement</small>
+      </div>
+
+      <div class="platformdetails">
+        <p>
+          The couses of our websites provide you the best in class teachers and
+          best in class environment !
+        </p>
+      </div>
+    </div>
+
+    <!-- end video bckground-->
+
+    <div class="logindiv" id="loginBox">
+      <h1 class="login_heading">Log-in</h1>
+      <p class="CloseLoginDivBttn" id="closelogindiv">+</p>
+
+      <div class="logindiv2">
+        <form id="login_form">
+          <input
+            type="text"
+            name="username"
+            id="username-field"
+            class="login-form-field"
+            placeholder="Use 'Saurabh' as a Id"
+            required
+          />
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password-field"
+            class="login-form-field"
+            placeholder="Use 'test@gmail.com' as a password"
+          />
+          <br />
+          <input type="submit" value="Login" id="login-form-submit" />
+        </form>
+      </div>
+      <p class="para">
+        Don't have Account ?<a id="SwitchtoSignUp"> Sign-Up</a> Here.
+      </p>
+    </div>
+
+    <div class="signDiv" id="signBox">
+      <div id="signUpDiv">
+        <h1>SignUp</h1>
+        <p id="closeForm">+</p>
+        <form id="signUpForm">
+          <input
+            type="text"
+            placeholder="username"
+            id="name"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="text"
+            placeholder="course"
+            id="course"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="email"
+            placeholder="email"
+            id="email"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="password"
+            placeholder="password"
+            id="pass"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="password"
+            placeholder="confirm password"
+            id="ConPass"
+            class="inputvalitation"
+            required
+          />
+          <input type="submit" id="signUpButton" value="Create Account" />
+        </form>
+        <p class="switchText">
+          Allready Have Account? <strong id="switchToLogin">Login</strong>
+        </p>
+      </div>
+    </div>
+
+    <script src="signup.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

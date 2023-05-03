@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Cart</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="fst_navDiv">
+        <a class="" href="home.html">CodingSchool</a>
+        <span class="">Learn and Implement </span>
+      </div>
+
+      <div class="Snd_navDiv">
+        <ul class="">
+          <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
+          <li class="">
+            <a
+              onclick="document.location='home.html#allcourses'"
+              class="a_tag_elm"
+              >Courses</a
+            >
+          </li>
+          <li class="">
+            <a href="myprofile.html" class="a_tag_elm">My Profile</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cart">
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Cart</h2>
+          <span id="cartSpan">0</span></a
+        >
+      </div>
+    </nav>
+
+    <div class="product_container">
+      <div class="product_header">
+        <h5 class="product_title">COURSE</h5>
+        <h5 class="price">PRICE</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="total">TOTAL</h5>
+      </div>
+
+      <div class="products">
+        <p id="productsPurchaseMessage"></p>
+      </div>
+    </div>
+
+    <!-- ----------------payment form hmtl-------- -->
+    <div class="paymentDiv">
+      <h1><u>Complete Your Payment</u></h1>
+      <form
+        class="paymentDivForm"
+        onsubmit="addingEverythingToCoursesPurchased()"
+      >
+        <strong class="CheckOutPayment"> </strong>
+        <input type="text" placeholder="Name on card" required />
+        <input type="number" placeholder="Card Number" required />
+        <input type="month" placeholder="Expiry Month" required />
+        <input type="password" placeholder="cvv" required />
+        <div class="paymentBttnDiv">
+          <button type="submit" class="confirmPaymentButton paymentBttn">
+            Confirm Payment
+          </button>
+          <button type="reset" class="cancelPaymentButton paymentBttn">
+            Cancel Payment
+          </button>
+        </div>
+      </form>
+      <footer class="paymentFooter">
+        <p>
+          <strong>WARNING-</strong> <br />This Project is for Practice Purpose
+          so Please <b><u>Don't </u></b> . Fill Your True Card Details If Any
+          Thing Happens I will Not Be Responsible For it !
+        </p>
+      </footer>
+    </div>
+
+    
+
+    <script src="./CartJavascript/script.js"></script>
+    <script src="./CartJavascript/cart.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,967 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Newsreader&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #56859e;
+}
+
+/* ------------------------------------Navigation Bar--------------------------------- */
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #264653;
+  height: 80px;
+  gap: 5px;
+  justify-content: space-around;
+  font-size: 20px;
+  position: fixed;
+  z-index: 2;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px #000;
+  border-bottom: 3px solid #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fst_navDiv {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fst_navDiv a {
+  font-size: 30px;
+  color: bisque;
+  text-decoration: none;
+}
+
+
+
+.Snd_navDiv {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  padding-right: 21px;
+  position: relative;
+}
+
+.indexSecondNav {
+  justify-content: flex-end;
+}
+
+.logout_li {
+  position: absolute;
+  right: 58px;
+}
+
+.secdiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Snd_navDiv ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+.a_tag_elm {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.a_tag_elm:hover {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #0e3347;
+  cursor: pointer;
+}
+
+/* ------------------------------------Home page Video Div--------------------------------- */
+.video_nd_txt_div {
+  position: relative;
+  height: 100%;
+  z-index: -1;
+}
+
+.video_div {
+  position: relative;
+}
+
+.Bg_video {
+  height: 100%;
+  width: 100%;
+}
+
+.blue_color_div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #225470;
+  opacity: 0.8;
+}
+
+.txt_div {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: 38%;
+  text-align: center;
+  color: #fff;
+  gap: 10px;
+  height: 120px;
+}
+
+.txt_div h1 {
+  font-size: 35px;
+}
+
+.txt_div small {
+  font-size: 20px;
+}
+
+.platformdetails {
+  position: absolute;
+  z-index: 1;
+  bottom: 30%;
+  left: 30%;
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------Index page Login form --------------------------------- */
+.logindiv {
+  visibility: hidden;
+  position: absolute;
+  top: 21%;
+  left: 555px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 450px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  visibility: hidden;
+  display: flex;
+  box-shadow: 0px 0px 6px 6px grey;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_heading {
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#SwitchtoSignUp {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logindiv2 {
+  text-align: center;
+  height: 60%;
+  width: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+form > input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+}
+
+#login_form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#login-form-submit {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 60%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+#login-form-submit:hover {
+  background-color: darkblue;
+}
+
+.CloseLoginDivBttn {
+  position: absolute;
+  top: -9px;
+  right: 0px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+/* ------------------------------------Index page SignUp Form--------------------------------- */
+#signUpForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#signUpDiv {
+  width: 400px;
+  height: 450px;
+  background: white;
+  position: relative;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  box-shadow: 0px 0px 6px 6px grey;
+}
+
+.inputvalitation {
+  border-radius: 5px;
+  width: 80%;
+  height: 28px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+#signUpDiv h1 {
+  display: flex;
+  justify-content: center;
+}
+
+#signUpForm input:focus-visible {
+  outline: none;
+}
+
+#switchToLogin {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#closeForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 800;
+  width: fit-content;
+  margin: 0px;
+  height: auto;
+  transform: rotate(45deg);
+}
+
+#signUpButton {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+#signUpButton:hover {
+  background-color: darkblue;
+}
+
+.switchText {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: flex-end;
+}
+
+.signDiv {
+  visibility: hidden;
+  height: 350px;
+  width: 327px;
+  position: absolute;
+  top: 140px;
+  left: 551px;
+  margin-top: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: black;
+}
+
+/* ------------------------------------My profile page update  Form--------------------------------- */
+.updateDiv {
+  position: absolute;
+  bottom: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  left: 38%;
+  height: 400px;
+  width: 350px;
+  visibility: hidden;
+  background: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 6px 5px grey;
+}
+
+#updateform {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.updatebttn {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+.updatebttn:hover {
+  background-color: darkblue;
+}
+
+#updateform > input {
+  width: 250px;
+}
+
+#closeUpdateDivBttn {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+#updateFormbutton {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+#updateFormbutton:hover {
+  background-color: darkblue;
+}
+
+/* ------------------------------------My profile page Feedback  Form--------------------------------- */
+#feedbackForm {
+  height: 400px;
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  background: white;
+  width: 350px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 6px 5px grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+#closeFeedbackForm {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+#feedForm {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.feedbackInput {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+#feedForm > textarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 300px;
+}
+
+.feedBackSumbitButton {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.feedBackResetButton {
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.feedBackResetButton:hover {
+  color: #fff;
+  background-color: cornflowerblue;
+}
+
+.feedBackSumbitButton:hover {
+  background-color: darkblue;
+}
+
+/* ------------------------------------Home Page Courses info Div--------------------------------- */
+#allcourses {
+  padding-top: 85px;
+}
+
+.courses {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 30px;
+  min-height: calc(100vh - 213px);
+}
+
+.courseHeading {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+}
+
+.courseName {
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+.course1 {
+  height: 340px;
+  width: 30%;
+  background-color: #1f586e;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2em 1em 4em / 0.5em 3em;
+  margin-top: 45px;
+  position: relative;
+  display: flex;
+  gap: 7px;
+  transform: scale(1);
+  transition: transform.5s, opacity.5s;
+  color: whitesmoke;
+}
+
+.course1:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+  box-sizing: border-box;
+  border: 2px solid black;
+  color: antiquewhite;
+}
+
+.courseImgDiv {
+  height: 250px;
+  width: 240%;
+  margin: 5px;
+}
+
+.courseImg {
+  height: 99%;
+  width: 99%;
+  border-radius: 8px;
+}
+
+.coursePrice {
+  margin-top: 30px;
+}
+
+.courseTime span {
+  font-weight: 800;
+}
+
+.addtocartbtn {
+  position: absolute;
+  bottom: 35px;
+  right: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 45px;
+  width: 120px;
+  font-weight: 700;
+}
+
+.addtocartbtn:hover {
+  background-color: #1f586e;
+  color: whitesmoke;
+}
+
+/* ------------------------------------My Profile Page--------------------------------- */
+.container {
+  margin-top: 0px;
+  position: absolute;
+  top: 150px;
+  background-color: #264653;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1 {
+  color: whitesmoke;
+  display: flex;
+  gap: 50px;
+}
+
+.content {
+  width: 250px;
+  background: aliceblue;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fas {
+  font-size: 28px;
+}
+
+.feedBackDiv {
+  width: 200px;
+}
+.feedBackDiv > h3 {
+  margin-right: 40px;
+}
+
+.secondContainer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.secondContainer a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ------------------------------------Cart Page--------------------------------- */
+.cart {
+  width: 500px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-direction: row;
+}
+
+.cart span {
+  font-size: 25px;
+  display: flex;
+}
+
+.cart a {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  display: flex;
+}
+
+.cart h2 {
+  margin: 0 5px;
+}
+
+/* ------------------------------------Footer CSS--------------------------------- */
+.mainFooter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: flex;
+  color: white;
+  background-color: #2f3e46;
+  flex-direction: column;
+  gap: 40px;
+  height: 133px;
+}
+
+.mainFooter ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.mainFooter ul h6 {
+  display: flex;
+  align-items: center;
+}
+
+.footerLi i {
+  font-size: 25px;
+}
+
+.footerLi i:hover {
+  cursor: pointer;
+}
+
+.profileFooter {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* ------------------------------------Cart Page Product Cointainer CSS--------------------------------- */
+.product_container {
+  max-width: 760px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  top: 100px;
+  background-color: #264653;
+  color: whitesmoke;
+  border: 3px solid black;
+  margin-bottom: 105px;
+}
+
+.product_header {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+}
+
+.product_title {
+  width: 45%;
+  border-bottom: 1px solid lightgray;
+}
+
+.price {
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total {
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  position: relative;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.product > h3 {
+  text-decoration: underline;
+}
+
+.products {
+  display: contents;
+}
+
+.cartTotalContainer {
+  display: block;
+  justify-content: flex-end;
+  position: relative;
+  width: 98%;
+  padding: 10px 0;
+}
+
+.cartTotalTitle {
+  position: absolute;
+  right: 0;
+  display: inline;
+  color: white;
+}
+
+.cartTotalTitle strong {
+  color: black;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.Checkout_button {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 20%;
+  height: 33px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.Checkout_button:hover {
+  background-color: rgb(36, 36, 139);
+}
+
+.basketTotal {
+  width: 10%;
+}
+
+.cartImg {
+  height: 200px;
+  width: 220px;
+  border: 1px solid black;
+}
+
+.cancelbutton {
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+/* ------------------------------------Payment Page CSS--------------------------------- */
+
+.paymentDiv {
+  display: flex;
+  top: 13%;
+  left: 28.4%;
+  position: fixed;
+  height: 645px;
+  width: 660px;
+  border: 2px solid black;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  visibility: hidden;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* total payment */
+.CheckOutPayment {
+  font-size: 20px;
+  color: red;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.paymentDivForm {
+  gap: 14px;
+  display: flex;
+  height: 480px;
+  width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paymentDivForm input {
+  width: 75%;
+  height: 8%;
+}
+
+.paymentBttnDiv {
+  width: 60%;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 18%;
+}
+
+.paymentBttn {
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 43%;
+  height: 38px;
+  text-decoration: none;
+}
+
+.confirmPaymentButton:hover {
+  background-color: #00b200;
+}
+
+.cancelPaymentButton:hover {
+  background-color: #ff0000;
+}
+
+.paymentFooter{
+      box-sizing: border-box;
+    border: 2px solid black;
+    height: 60px;
+    margin-bottom: -10px;
+    padding-left: 22px;
+    margin-left: -1px;
+}
+
+.paymentFooter p {
+  color: red;
+}
+
+.paymentFooter p strong {
+  color: black;
+}
+
+/* mycourse page style -----------*/
+#courseContainer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.coursePurchased {
+  background-color: #1f586e;
+  width: 22%;
+  height: 355px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+  align-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.purchasedCourseImg {
+  width: 85%;
+  height: 80%;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.removePurchasedCourse {
+  top: -10px;
+  right: 1px;
+  font-size: 34px;
+  position: absolute;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.purchsedCourseName:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
+/* ----------------- */
